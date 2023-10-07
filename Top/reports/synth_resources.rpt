@@ -1,0 +1,65 @@
+ 
+****************************************
+Report : resources
+Design : Top
+Version: K-2015.06
+Date   : Thu Sep 28 21:42:49 2023
+****************************************
+
+
+Resource Report for this hierarchy in file
+        /home/IC/Desktop/khaled_taher/src/DataPath.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_26        | DW_cmp         | width=5    | Hazard_control_instance/eq_12 (hazard_control.v:12) |
+| eq_x_27        | DW_cmp         | width=5    | Hazard_control_instance/eq_14 (hazard_control.v:14) |
+| eq_x_29        | DW_cmp         | width=5    | Hazard_control_instance/eq_26 (hazard_control.v:26) |
+| eq_x_30        | DW_cmp         | width=5    | Hazard_control_instance/eq_28 (hazard_control.v:28) |
+| eq_x_32        | DW_cmp         | width=5    | Hazard_control_instance/eq_40 (hazard_control.v:40) |
+| eq_x_33        | DW_cmp         | width=5    | Hazard_control_instance/eq_40_2 (hazard_control.v:40) |
+| add_x_61       | DW01_add       | width=32   | DataPath_inst/Adder_PCPlus4_instance/add_8 (Adder_ALU.v:8) |
+  |            | DataPath_inst/Adder_PCPlus4_instance/add_8_2 (Adder_ALU.v:8) |
+| add_x_62       | DW01_add       | width=32   | DataPath_inst/Adder_PCtarget_instance/add_8 (Adder_ALU.v:8) |
+ |            | DataPath_inst/Adder_PCtarget_instance/add_8_2 (Adder_ALU.v:8) |
+| DP_OP_91J2_122_4631             |            |                            |
+|                | DP_OP_91J2_122_4631 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_91J2_122_4631
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_91J2_122_4631  | DataPath_inst/ALU_instance/Adder_Risc_instance/add_8 (Adder_ALU.v:8) |
+      | DataPath_inst/ALU_instance/Adder_Risc_instance/add_8_2 (Adder_ALU.v:8) |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 32    |                                          |
+| I2    | PI   | Unsigned | 32    |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| O1    | PO   | Unsigned | 32    | I1 + I2 + I3 (Adder_ALU.v:8)             |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_26            | DW_cmp           | apparch (area)     |                |
+| eq_x_27            | DW_cmp           | apparch (area)     |                |
+| eq_x_29            | DW_cmp           | apparch (area)     |                |
+| eq_x_30            | DW_cmp           | apparch (area)     |                |
+| eq_x_32            | DW_cmp           | apparch (area)     |                |
+| eq_x_33            | DW_cmp           | apparch (area)     |                |
+| add_x_61           | DW01_add         | apparch (area)     |                |
+| add_x_62           | DW01_add         | pparch (area,speed)                 |
+| DP_OP_91J2_122_4631                   |                    |                |
+|                    | DP_OP_91J2_122_4631 | str (area,speed)                 |
+===============================================================================
+
+1

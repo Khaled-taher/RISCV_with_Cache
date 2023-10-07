@@ -1,0 +1,5 @@
+set_max_delay .1 -from [all_inputs] -to [all_outputs]
+create_clock -name clk -period 1.6 [get_ports clk]
+set_clock_uncertainty 0.1 [get_clocks ]
+set_input_delay -max 0.05 -clock [get_clocks clk] [remove_from_collection [all_inputs] [get_ports clk]]
+set_output_delay -max 0.1 -clock clk [all_outputs]
